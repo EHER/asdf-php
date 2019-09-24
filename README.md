@@ -1,6 +1,6 @@
 # asdf-php
 
-[![Build Status](https://travis-ci.org/odarriba/asdf-php.svg?branch=master)](https://travis-ci.org/odarriba/asdf-php)
+[![Build Status](https://travis-ci.org/EHER/asdf-php.svg?branch=master)](https://travis-ci.org/EHER/asdf-php)
 
 PHP plugin for [asdf version manager](https://github.com/HashNuke/asdf).
 
@@ -21,7 +21,7 @@ PHP_WITHOUT_PEAR=yes asdf install php 7.2.14
 ## Install
 
 ```
-asdf plugin-add php https://github.com/odarriba/asdf-php.git
+asdf plugin-add php https://github.com/EHER/asdf-php.git
 ```
 
 **Please, remember installing the common required libraries that can be found on the `asdf` README. They are necessary to build PHP versions too!**
