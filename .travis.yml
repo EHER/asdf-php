@@ -1,5 +1,7 @@
 language: c
-script: asdf plugin-test php https://github.com/EHER/asdf-php.git
+script:
+- ./bin/list-all
+- asdf plugin-test php .
 before_install:
 - if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then brew update; fi
 - if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then brew outdated jpeg || brew upgrade jpeg; fi

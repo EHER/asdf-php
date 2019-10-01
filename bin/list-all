@@ -10,6 +10,11 @@ if hash gsed 2>/dev/null; then
   sed="gsed"
 fi
 
+curl --version || exit 1
+grep --version || exit 1
+$sed --version || exit 1
+xargs --version || exit 1
+
 versions=$(curl $auth -s https://api.github.com/repos/php/php-src/git/refs/tags | # Fetch all tags
           grep '"ref":' | # Filter by refs
           grep 'php-' | # Filter only those related to php-xxxx
